@@ -1,0 +1,11 @@
+.termsection {
+    margin-left:10px;
+}
+.courselink {
+    margin-left:20px;
+}
+.navbar-right {
+    margin-right:-5px;
+}
+
+tr.clickableRow { cursor: pointer; }

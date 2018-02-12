@@ -7,9 +7,10 @@ public class Exeptions {
         a = "Fraction cannot be 0";
     }
 
-    public Exeptions (int Ex){
+    public String exeptions(int Ex){
        if (Ex == 1 ) {
          return  a;
        }
+       return null;
    }
 }
