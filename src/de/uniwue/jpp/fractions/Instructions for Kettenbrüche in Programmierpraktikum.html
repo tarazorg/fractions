@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Instructions for Kettenbrüche in Programmierpraktikum</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./Instructions for Kettenbrüche in Programmierpraktikum_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./Instructions for Kettenbrüche in Programmierpraktikum_files/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="./Instructions for Kettenbrüche in Programmierpraktikum_files/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="./Instructions for Kettenbrüche in Programmierpraktikum_files/pabs.css">
+
+        
+
+        <script type="text/javascript" language="javascript" src="./Instructions for Kettenbrüche in Programmierpraktikum_files/jquery.min.js.Download"></script>
+        <script type="text/javascript" language="javascript" src="./Instructions for Kettenbrüche in Programmierpraktikum_files/bootstrap.min.js.Download"></script>
+        <script type="text/javascript" language="javascript" src="./Instructions for Kettenbrüche in Programmierpraktikum_files/moment-with-locales.min.js.Download"></script>
+        <script type="text/javascript" language="javascript" src="./Instructions for Kettenbrüche in Programmierpraktikum_files/jquery.dataTables.min.js.Download"></script>
+        <script type="text/javascript" language="javascript" src="./Instructions for Kettenbrüche in Programmierpraktikum_files/dataTables.bootstrap.min.js.Download"></script>
+
+
+        <script type="text/javascript" language="javascript">
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        
+
+        
+
+<script type="text/javascript">
+    var jsRoutes = {}; (function(_root){
+var _nS = function(c,f,b){var e=c.split(f||"."),g=b||_root,d,a;for(d=0,a=e.length;d<a;d++){g=g[e[d]]=g[e[d]]||{}}return g}
+var _qS = function(items){var qs = ''; for(var i=0;i<items.length;i++) {if(items[i]) qs += (qs ? '&' : '') + items[i]}; return qs ? ('?' + qs) : ''}
+var _s = function(p,s){return p+((s===true||(s&&s.secure))?'s':'')+':\/\/'}
+var _wA = function(r){return {ajax:function(c){c=c||{};c.url=r.url;c.type=r.method;return jQuery.ajax(c)}, method:r.method,type:r.method,url:r.url,absoluteURL: function(s){return _s('http',s)+'pabs.uni-wuerzburg.de'+r.url},webSocketURL: function(s){return _s('ws',s)+'pabs.uni-wuerzburg.de'+r.url}}}
+_nS('de.uniwue.pabs.controller.SubmissionController'); _root['de']['uniwue']['pabs']['controller']['SubmissionController']['submitAsSolution'] = 
+        function(courseId0,assignmentId1,login2,revision3) {
+          return _wA({method:"POST", url:"\/" + "courses\/" + (function(k,v) {return v})("courseId", courseId0) + "\/assignments\/" + (function(k,v) {return v})("assignmentId", assignmentId1) + "\/user\/" + (function(k,v) {return v})("login", encodeURIComponent(login2)) + "\/revisions\/" + (function(k,v) {return v})("revision", revision3) + "\/solution"})
+        }
+      ;
+})(jsRoutes)
+</script>
+
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pabs-navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions#">PABS</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="pabs-navbar-collapse">
+                
+                    
+                        
+                            
+
+
+
+
+<ul class="nav navbar-nav">
+    <li class="dropdown">
+        <a id="Courses-dropdown" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions#" role="button" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="Courses-dropdown">
+            
+                
+
+
+
+<li role="presentation" class="dropdown-header ">
+    My Courses
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header ">
+    2017
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header  termsection">
+    Winter
+</li>
+
+
+    
+
+
+
+<li role="presentation" class=" courselink">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23421">Programmierpraktikum</a>
+</li>
+
+
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header ">
+    2016
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header  termsection">
+    Winter
+</li>
+
+
+    
+
+
+
+<li role="presentation" class=" courselink">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23400">Einführendes Programmierpraktikum</a>
+</li>
+
+
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header ">
+    2015
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header  termsection">
+    Summer
+</li>
+
+
+    
+
+
+
+<li role="presentation" class=" courselink">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/22851">Einführendes Programmierpraktikum</a>
+</li>
+
+
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header ">
+    2014
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="dropdown-header  termsection">
+    Winter
+</li>
+
+
+    
+
+
+
+<li role="presentation" class=" courselink">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/22704">Algorithmen &amp; Datenstrukturen (Wirtschaftsinformatik)</a>
+</li>
+
+
+    
+
+
+
+<li role="presentation" class=" courselink">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/22801">Einführendes Programmierpraktikum</a>
+</li>
+
+
+
+
+            
+                <li role="presentation" class="divider"></li>
+            
+                
+
+
+
+<li role="presentation" class="">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses">All Courses</a>
+</li>
+
+            
+        </ul>
+    </li>
+</ul>
+
+                        
+                            
+
+
+
+
+<ul class="nav navbar-nav">
+    <li class="dropdown">
+        <a id="Programmierpraktikum-dropdown" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions#" role="button" class="dropdown-toggle" data-toggle="dropdown">Programmierpraktikum <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="Programmierpraktikum-dropdown">
+            
+                
+
+
+
+<li role="presentation" class="dropdown-header ">
+    Assignments
+</li>
+
+
+    
+
+
+
+<li role="presentation" class="">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions">Kettenbrüche</a>
+</li>
+
+
+            
+                <li role="presentation" class="divider"></li>
+            
+                
+
+
+
+<li role="presentation" class="">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23421">Go to course</a>
+</li>
+
+            
+        </ul>
+    </li>
+</ul>
+
+                        
+                            
+
+
+
+
+<ul class="nav navbar-nav">
+    <li class="dropdown">
+        <a id="Kettenbrüche-dropdown" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions#" role="button" class="dropdown-toggle" data-toggle="dropdown">Kettenbrüche <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="Kettenbrüche-dropdown">
+            
+                
+
+
+
+<li role="presentation" class="">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/instructions">Instructions</a>
+</li>
+
+            
+                
+
+
+
+<li role="presentation" class="">
+    <a role="menuitem" tabindex="-1" href="https://pabs.uni-wuerzburg.de/courses/23421/assignments/9794224/user/s341106/revisions">Revisions</a>
+</li>
+
+            
+                <li role="presentation" class="divider"></li>
+            
+        </ul>
+    </li>
+</ul>
+
+                        
+                    
+                
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <p class="navbar-text navbar-right">
+                            
+
+
+
+    
+        Michael Maiwald (s341106) (<a href="https://pabs.uni-wuerzburg.de/logout">Logout</a>)
+    
+
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Space for Breadcrumbs -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <h1 id="HKettenbrFCche"><span>Kettenbrüche</span></h1><p>In dieser Aufgabe werden wir ein kleines Framework implementieren, um (Ketten-)brüche auf die Kommandozeile auszugeben.</p><h2 id="HAllgemeineHinweise"><span>Allgemeine Hinweise</span></h2><ul><li>Verwenden Sie unter keinen Umständen <tt>System.exit()</tt>! Dies beendet nicht nur Ihr Programm, sondern auch die Testumgebung des PABS-Servers. Lösungen, die <tt>System.exit()</tt> verwenden, können nicht abgegeben werden und werden mit 0 Punkten bewertet.</li><li>Verwenden Sie nie statische Felder, die nicht <tt>final</tt> sind!</li><li>Erstellen Sie alle Ihre Code-Dateien mit UTF-8 Codierung.</li><li>Zeilenumbrüche sind generell mit "\n" oder <tt>println()</tt> zu erzeugen.</li><li>Beachten Sie, dass zur Zeit aus technischen Gründen leider nur das Java Feature-Level 1.8 unterstützt wird. Funktionen aus Java 9 können <strong>nicht</strong> verwendet werden.</li><li>Lesen Sie in der Java API Dokumentation nach! Nicht nur, wenn das in der Aufgabenstellung explizit gefordert wird, sondern immer, wenn Sie eine Klasse verwenden, die Sie nicht auswendig kennen.</li><li>Eine von PABS als falsch erkannte Abgabe ist falsch. Die Umkehrung gilt <ins>nicht</ins>!</li><li>Jede testbare Abgabe wird vom PABS System als "accepted" gekennzeichnet werden. Dies bedeutet <strong>nicht</strong>, dass Sie volle Punktzahl (oder überhaupt Punkte) auf diese Abgabe bekommen. Ausschlaggebend sind ausschließlich Art und Anzahl bestandener Tests, sowie eventuell weiterer unsichtbarer Tests.&nbsp;</li></ul><h2 id="HZielderAugabe"><span>Ziel der Augabe</span></h2><p>Ziel der Aufgabe ist es, ein vollständiges Framework zu entwickeln, mit dem beliebig komplexe Kettenbrüche und ähnliche Terme sauber auf die Kommandozeile ausgegeben werden können.</p><p><strong>Beispiel</strong>: Dem Programm wird die folgende Eingabe übergeben:<br> &nbsp;&nbsp;&nbsp;<tt>1 / ((3 / x) * (y / 5) + ((2 / x) / y))</tt><br>Ihr Programm sollte in der Lage sein, diese Eingabe zu interpretieren, in Java Objekte umzuwandeln und diese dann in folgender Form auszugeben:<br> &nbsp;&nbsp;&nbsp;<img src="./Instructions for Kettenbrüche in Programmierpraktikum_files/example.png" height="140" alt="/courses/23421/assignments/9794224/user/s341106/instructions/resources/base/example.png"></p><h2 id="HImplementierung"><span>Implementierung</span></h2><p>Zur Implementierung des Frameworks machen wir uns das Entwurfsmuster Kompositum zu Nutze. Als gemeinsames Interface für alle Elemente definieren wir das Interface <tt>Element</tt>.</p><p>Alle Klassen sollen <tt>public</tt> im Paket <tt><strong>de.uniwue.jpp.fractions</strong></tt> definiert werden.</p><p><ins>Hinweis:</ins> In dieser Aufgabe werden verschiedene Sonderzeichen verwendet. Um Darstellungsfehler zu vermeiden achten Sie bitte darauf, dass in Ihrer IDE eine Schriftart mit Unicode Support eingerichtet ist.</p><h3 id="HDasInterfaceElement"><span>Das Interface <tt>Element</tt></span></h3><p>Erstellen Sie das Interface <tt>Element</tt>. Erstellen Sie <strong>ausschließlich</strong> die folgenden Methoden.</p><ul><li><strong><tt>public int width();</tt></strong>: Gibt die Breite des Elements in Zeichen aus.</li><li><strong><tt>public int lineCount();</tt></strong>: Gibt aus, wie viele Zeilen das Element umfasst.</li></ul><p>Wenn Sie dem Interface weitere Methoden hinzufügen wollen, müssen diese als <tt>static</tt> oder <tt>default</tt> definiert werden.</p><h3 id="HDieKlasseTerm"><span>Die Klasse <tt>Term</tt></span></h3><p>Erstellen Sie die Klasse <tt>Term</tt>, die das Interface <tt>Element</tt> implementiert. <tt>Term</tt> stellt einen beliebigen einzeiligen Term dar, der innerhalb unserer Brüche verwendet werden kann.</p><p>Erstellen Sie die folgenden Konstruktoren.</p><ul><li><strong><tt>public Term()</tt></strong>: Erstellt einen leeren Term.</li><li><strong><tt>public Term(String term)</tt></strong>: Erstellt einen neuen Term, der die erste Zeile des übergebenen Strings umfasst. Eventuelle weiter Zeilen werden verworfen. Ist der Parameter <tt>null</tt>, soll eine <tt>NullPointerException</tt> geworfen werden.</li></ul><p>Überschreiben Sie die Methode <tt>toString</tt>, sodass sie den im Konstruktor definierten String ausgibt.</p><p>Überschreiben Sie die Methoden <tt>equals</tt> und <tt>hashCode</tt>, sodass zwei <tt>Term</tt> Objekte als gleich angesehen werden, wenn sie den gleichen Term beschreiben.</p><h3 id="HDieKlasseFraction"><span>Die Klasse <tt>Fraction</tt></span></h3><p>Erstellen Sie die Klasse <tt>Fraction</tt>, die das Interface <tt>Element</tt> implementiert. <tt>Fraction</tt> stellt einen einzelnen Bruch in unserem Kettenbruchsystem dar. Als Zähler und Nenner können beliebige andere Elemente eingesetzt werden.</p><p>Erstellen Sie den folgenden Konstruktor.</p><ul><li><strong><tt>public Fraction(Element numerator, Element denominator)</tt></strong>: Erstellt einen neuen Bruch mit dem gegebenen Zähler und Nenner. Ist einer der Parameter <tt>null</tt>, soll eine <tt>NullPointerException</tt> geworfen werden. Hat einer der Parameter die Breite 0, soll eine <tt>IllegalArgumentException</tt> mit aussagekräftiger Fehlermeldung geworfen werden.</li></ul><p>Überschreiben Sie die Methode <tt>toString</tt>. Der Bruch wird dabei wie folgt zusammengesetzt.</p><ul><li>Bestimmen Sie die Gesamtbreite des Bruchs. Der Bruchstrich soll das breitere Element vorne und hinten jeweils um ein Zeichen überragen.</li><li>Das gesamte Element soll eine rechteckige Fläche einnehmen. Sowohl der Bereich vor (links von) als auch hinter (rechts von) den Elementen soll wenn nötig aufgefüllt werden.</li><li>Zähler und Nenner sollen mittig platziert werden. Geht dies nicht auf, soll der vordere (linke) Füllbereich kleiner ausfallen als der hintere (rechte).</li><li>Als Füllzeichen ist das Leerzeichen (SPACE U+0020) zu verwenden. Der Bruchstrich soll aus zeichenbreiten Querstrichen (EM DASH U+2014) bestehen.</li></ul><p><strong>Beispiel</strong>: Der Bruch 1/2x sähe folgendermaßen aus.<br> &nbsp;&nbsp;&nbsp;<img src="./Instructions for Kettenbrüche in Programmierpraktikum_files/fraction.png" height="60" alt="/courses/23421/assignments/9794224/user/s341106/instructions/resources/base/fraction.png"></p><p>Überschreiben Sie die Methoden <tt>equals</tt> und <tt>hashCode</tt>, sodass zwei <tt>Fraction</tt> Objekte als gleich angesehen werden, wenn sie den gleichen Zähler und Nenner haben.</p><h3 id="HDieKlasseOperator"><span>Die Klasse <tt>Operator</tt></span></h3><p>Erstellen Sie die Klasse <tt>Operator</tt>, die das Interface <tt>Element</tt> implementiert. <tt>Operator</tt> stellt einen Operator, wie z.B. Plus oder Mal, zwischen zwei Elementen dar. Der Operator ist eine beliebige, einzeilige Zeichenkette. Die Operanden sind wiederum Elemente.</p><p>Erstellen Sie den folgenden Konstruktor.</p><ul><li><strong><tt>public Operator(Element left, String operator, Element right)</tt></strong>: Erstellt einen neues Operatorelement mit dem gegebenen Operator und den gegebenen Operanden. Ist einer der Parameter <tt>null</tt>, soll eine <tt>NullPointerException</tt> geworfen werden. Hat <tt>operator</tt> mehrere Zeilen sollen alle bis auf die Erste verworfen werden. Ein leerer Operator oder leere Operanden (Operanden der Breite 0) sind erlaubt.</li></ul><p>Überschreiben Sie die Methode <tt>toString</tt>. Der Operator wird dabei wie folgt zusammengesetzt.</p><ul><li>Das gesamte Element soll eine rechteckige Fläche einnehmen. Sowohl der Bereich über als auch unter den Elementen soll wenn nötig aufgefüllt werden. Verwenden Sie als Füllzeichen das Leerzeichen (SPACE U+0020).</li><li>Die Operanden und der Operator sollen vertikal mittig platziert werden. Geht dies nicht auf, soll der untere Füllbereich kleiner ausfallen als der obere.</li><li>Beachten Sie, dass sowohl der Operator als auch die Operanden leer sein (die Breite 0 haben) können.</li></ul><p><strong>Beispiel</strong>: Ein Operator aus den Brüchen 1/x und 1/y sowie dem Operator " + " sähe folgendermaßen aus.<br> &nbsp;&nbsp;&nbsp;<img src="./Instructions for Kettenbrüche in Programmierpraktikum_files/operator.png" height="60" alt="/courses/23421/assignments/9794224/user/s341106/instructions/resources/base/operator.png"></p><p>Überschreiben Sie die Methoden <tt>equals</tt> und <tt>hashCode</tt>, sodass zwei <tt>Operator</tt> Objekte als gleich angesehen werden, wenn Operator und Operanden übereinstimmen.</p><h3 id="HDieKlasseParser"><span>Die Klasse <tt>Parser</tt></span></h3><p>Erstellen Sie die Klasse <tt>Parser</tt>. Sie dient dazu, Kettenbrüche einzulesen und in unsere interne Darstellung umzuwandeln.</p><p>Erstellen Sie die folgende Methode.</p><ul><li><strong><tt>public static Element parse(String input)</tt></strong>: Wandelt den übergebenen, codierten Kettenbruch in ein <tt>Element</tt> Objekt um.</li></ul><p>Um Kettenbrüche aus Nutzereingaben oder einer Datei einzulesen, braucht es ein einfaches Format, in dem die Brüche codiert sind. Wir orientieren uns dabei an der gewohnten Schreibweise vom Brüchen, wie man sie z.B. von Taschenrechnern kennt.</p><p>Ein Bruch wird durch das Schrägstrich-Zeichen (SOLIDUS U+002F) gekennzeichnet. Zusätzlich werden runde Klammern (LEFT PARENTHESIS U+0028 und RIGHT PARENTHESIS U+0029) zur Gruppierung von Ausdrücken verwendet.</p><p>Da alle anderen Rechenzeichen für unser Programm bloßer Text sind, haben Bruchzeichen immer die niedrigste Präzedenz. Regeln wie Punkt vor Strich gelten also nicht. Der Bruch "1/x-5" ist entsprechend gleichbedeutend zu "1/(x-5)". Befinden sich mehrere Bruchzeichen auf der selben Ebene wird wie gewohnt von links nach rechts ausgewertet. Der Bruch "1/x/y" ist also gleichbedeutend zu "(1/x)/y".</p><p>Whitespace Zeichen (insbesondere Leerzeichen) am Anfang und Ende eines Ausdrucks sowie Klammern, die einen vollständigen Ausdruck umschließen, werden nicht dargestellt. <strong>Achtung!</strong> Dies bedeutet nicht, dass alle Klammern und Leerzeichen entfernt werden. Im Bruch "x + sin(x) / (1/x)" bleiben beispielsweise die Leerzeichen um das Plus sowie die Klammern des Sinus erhalten. Lediglich die Klammern um den Ausdruck 1/x werden entfernt sowie die Leerzeichen vor und nach dem Bruchzeichen.</p><p>Zur Auswertung der Eingaben sollen Sie folgenden Algorithmus umsetzen.</p><ol><li>Whitespace Zeichen vor und hinter dem Ausdruck werden entfernt.</li><li>Enthält der Ausdruck kein Bruchzeichen, ist er ein Term. Dies gilt auch für den leeren Ausdruck.</li><li>Ist der Ausdruck von <strong>zusammengehörigen</strong> Klammern umschlossen, werden die Klammern entfernt. (Gegenbeispiel: Im Ausdruck "(1/x)*(1/y)" werden keine Klammern entfernt. Erstes und letztes Zeichen sind zwar Klammern, gehören aber nicht zusammen.)</li><li>Hat ein Bruchzeichen die niedrigste Präzedenz, ist der Ausdruck ein Bruch. Der Ausdruck vor dem Bruchzeichen ist der Zähler, der nach dem Bruchzeichen der Nenner.</li><li>Andernfalls ist der Ausdruck ein Operator. Beim Aufteilen des Ausdrucks können Sie sich zu Nutze machen, dass mindestens einer der Operanden von Klammern umgeben ist. Befinden sich nur auf einer Seite Klammern, wie z.B. bei "sin(1/x)", ist der komplette ungeklammerte Teil als Operator anzusehen (im Beispiel also "sin").</li></ol><p>In folgenden Fällen ist die Eingabe ungültig und die Auswertung wird mit einer <tt>IllegalArgumentException</tt> abgebrochen.</p><ul><li>Die Anzahl der öffnenden und schließenden Klammern stimmt nicht überein. (Beispiel: "(1/x/(1/y)")</li><li>Der Zähler oder Nenner eines Bruches ist leer. (Beispiel: "1 / / x")</li></ul><p>Alle anderen Eingaben sollen von Ihrem Programm verarbeitet werden können.<br>Testen Sie dies ausgiebig!</p><h4 id="HBeispiel"><span>Beispiel</span></h4><p>Der folgende Ausdruck soll von unserem Programm geparsed werden: "sin(x) + (1/x) / x + 7".</p><p>Als erstes ist der zweite Bruchstrich (16. Zeichen) zu betrachten. Da er nicht von Klammern umschlossen ist, hat er automatisch die niedrigste Präzedenz und wird entsprechend als erstes geparsed (Regel 4). Der Ausdruck ist entsprechend ein Bruch. Als nächstes parsen wir den Nenner des Bruches, also " x + 7". Nach Regeln 1 und 2 wird daraus der Term "x + 7". Bleibt noch der Zähler des äußeren Bruchs "sin(x) + (1/x) ". Auch hier greift wieder Regel 1 und dann Regel 5, da der Bruchstrich in Klammern steht. Als Operator identifizieren wir den Ausdruck zwischen den beiden geklammerten Blöcken " + " (incl. Leerzeichen). Als linke Seite gilt es "sin(x)" zu parsen, was nach Regel 2 ein Term wird. Als rechte Seite bleibt "(1/x)", das nach den Regeln 3, 4 und 2 in einen Bruch aus den Termen "1" und "x" zerlegt wird.</p><p>Das Ergebnis sieht dan folgendermaßen aus.<br> &nbsp;&nbsp;&nbsp;<img src="./Instructions for Kettenbrüche in Programmierpraktikum_files/parser.png" height="100" alt="/courses/23421/assignments/9794224/user/s341106/instructions/resources/base/parser.png"></p><h1 id="HVielSpaDF21"><span>Viel Spaß!</span></h1>
+        </div>
+    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <footer>
+                PABS 3.5 - University of Würzburg
+            </footer>
+
+        </div> <!-- /container -->
+
+
+    
+
+
+
+</body></html>
