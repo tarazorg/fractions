@@ -2,15 +2,35 @@ package de.uniwue.jpp.fractions;
 
 public class Parser {
     public static Element parse(String input){
-
-
+    	int openCounter = 0;
+    	String zaehler = "";
+    	String nenner = "";
+    	int closeCounter = 0;
+    	//Regel 1 -> trim
+    	char[] chars = input.trim().toCharArray();
+    	
+    	for(int i=0; i<chars.length; i++) {
+    		char currentChar = chars[i];
+    		if(currentChar == '(') {
+    			openCounter++;
+    		}else if (currentChar == ')') {
+    			closeCounter++;
+    				//Regel 2
+    		}else if (currentChar == '/' && openCounter==closeCounter && i != 0) {
+    			zaehler = (String) input.subSequence(0, i-1);
+    			nenner = (String) input.subSequence(i+1, chars.length);
+    			System.out.println("Zähler: "+zaehler);
+    			System.out.println("Nenner: "+nenner);
+    		}
+    	}
+    	
         return null;
     }
     
     public static void main(String[]args) {
-    	String test = "test";
-    	System.out.println("l"+rPad(test, 5)+"l");
-    	System.out.println("l"+lPad(test, 5)+"l");
+    	String test = "sin(x) + (1/x) / x + 7";
+    	String test2 = "1 / ((3 / x) * (y / 5) + ((2 / x) / y))";
+    	parse(test2);
     }
     
     

@@ -15,10 +15,15 @@ public class Fraction implements Element{
 
 		//		Fraction frac = new Fraction(new Term("22"), new Term("4444"));
 		//		Fraction frac2 = new Fraction(new Term("2x/4"), new Term("4y/2"));
-//		Fraction frac = new Fraction(new Fraction(new Term("88"), new Term("44")), new Term("55"));
-		Fraction frac = new Fraction(new Fraction(new Term("8888888888"), new Term("4444")), new Fraction(new Term("666666"), new Term("333")));
+		Fraction frac = new Fraction(new Fraction(new Term("88"), new Term("44")), new Term("55"));
+		Fraction frac2 = new Fraction(new Term("55"), new Fraction(new Term("88"), new Term("1337")));
+		Fraction frac3 = new Fraction(new Fraction(new Term("8888888888"), new Term("(44)")), new Fraction(new Term("666666"), new Term("333")));
 
 		System.out.println(frac.toString());
+		System.out.println();
+		System.out.println(frac2.toString());
+		System.out.println();
+		System.out.println(frac3.toString());
 
 		//		System.out.println(frac.equals(frac2));
 	}
@@ -43,7 +48,7 @@ public class Fraction implements Element{
 		this.width= width();
 
 		StringBuilder dashBuilder = new StringBuilder();
-		for (int i=0; i<width(); i++) {
+		for (int i=0; i<width; i++) {
 			dashBuilder.append("-");
 		}
 		dash = dashBuilder.toString();
